@@ -12,3 +12,4 @@ return
 ; Load all of these scripts
 #Include mediakeys.ahk ; media controls
 #Include windows.ahk ; window manipulation
+#Include altmove.ahk ; Move windows while holding alt
