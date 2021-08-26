@@ -1,24 +1,23 @@
 ; Easy window dragging
 ; =====================
 
-;  credits:
-;
-; alt + click window dragging
+
+; credits
+; =======
+; Alt move (customized)
 ;    https://autohotkey.com/board/topic/25106-altlbutton-window-dragging/
 ;
-; Changing the mouse cursor while doing so
+; Changing the mouse cursor while doing so                               
 ;    https://autohotkey.com/board/topic/32608-changing-the-system-cursor/
+
+
+
 ;
-
-
+; Alt Move
+;
 
 #SingleInstance Force
 
-;--------------------------------------------------
-; Window dragging via alt+lbutton                 -
-; Author: Lasmori (email AT lasmori D0T com)      -
-; http://www.autohotkey.com/forum/topic27487.html -
-;--------------------------------------------------
 !LButton::
 
 ; Fixed to move background windows properly
@@ -32,9 +31,9 @@ cur_win_y := current_y - win_y
 WinGet, window_minmax, MinMax, ahk_id %window_id%
 
 ; Return if the window is maximized or minimized
-if window_minmax <> 0
+if window_minmax <> 0 
 {
-  return
+  WinRestore, A
 }
 
 CoordMode, Mouse, Screen
