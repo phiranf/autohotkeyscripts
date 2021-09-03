@@ -9,6 +9,9 @@
   Reload
 return
 
+; Remap Capslock to Escape
+Capslock::Esc
+
 ; Load all of these scripts
 #Include mediakeys.ahk ; media controls
 #Include windows.ahk ; window manipulation
