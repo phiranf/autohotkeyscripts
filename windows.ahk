@@ -2,12 +2,12 @@
 ; =========
 
 
-; Minimize the current window
+; Alt + ESC = Force to minimize the current window
 !e::
   WinMinimize, A
 return
 
-; Set current window always on top of other windows
+; CTRL + y = Current window always on top of other windows
 ^y::
   Winset, Alwaysontop, toggle, A
   WinGet, ExStyle, ExStyle, A
@@ -28,7 +28,7 @@ return
 !^c::
   WinExist("A")
   WinGetPos,,, sizeX, sizeY
-  WinMove, (A_ScreenWidth/2)-(sizeX/2), (A_ScreenHeight/2)-(sizeY/2)
+  WinMove, (A_ScreenWidth/2)-(sizeX/2), (A_ScreenHeight/2)-(sizeY/2) - 13 
 return
 
 #enter::
