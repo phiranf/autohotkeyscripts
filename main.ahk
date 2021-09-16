@@ -9,10 +9,11 @@
   Reload
 return
 
-; Remap Capslock to Escape
+; Remap capslock to esc
 Capslock::Esc
 
 ; Load all of these scripts
 #Include mediakeys.ahk ; media controls
 #Include windows.ahk ; window manipulation
 #Include altmove.ahk ; Move windows while holding alt
+#Include ms_teams.ahk ; Move windows while holding alt
