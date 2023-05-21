@@ -16,5 +16,4 @@ Capslock::Esc
 #Include mediakeys.ahk ; media controls
 #Include windows.ahk ; window manipulation
 #Include altmove.ahk ; Move windows while holding alt
-#Include ms_teams.ahk ; Move windows while holding alt
 #Include umlauts.ahk ; Hotkeys for german keyboard layout
